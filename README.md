@@ -34,6 +34,6 @@ The ability to select a currency to donate in would also be a welcome addition a
 
 ## Running test
 
-There are 20 tests across a single suite of tests.
+There are 20 tests across a two suites of tests.
 Tests can be run with the following command:
 `npm run test`
