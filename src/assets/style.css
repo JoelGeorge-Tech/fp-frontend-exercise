@@ -1,0 +1,131 @@
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.donation-container {
+  background: white;
+}
+
+.indie-pledge-container {
+  background: rgb(255, 250, 210);
+  padding: 20px;
+}
+
+.indie-pledge-container header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #42b983;
+  margin-bottom: 0.5rem;
+}
+
+.indie-pledge-container .location {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #42b983;
+  margin-bottom: 0.5rem;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.input-group {
+  display: flex;          
+  align-items: center;    
+  gap: 1rem;             
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  font-weight: 500;
+  color: #2c3e50;
+  width: max-content;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  max-width: 100%;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #42b983;
+  box-shadow: 0 0 0 2px rgba(66, 185, 131, 0.2);
+}
+
+.pledge-button {
+  margin: 0 auto 1.5rem auto;
+  display:block;
+  width: 50%;
+  padding: 1rem;
+  background: #42b983;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 1.5rem;
+}
+
+.pledge-button:hover {
+  background: #3aa876;
+}
+
+
+/* Desktop layout (side-by-side) */
+@media (min-width: 769px) {
+  .app-wrapper {
+    padding: 20px 20px; 
+  }
+  
+  .outer-container {
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+    align-items: center; 
+  }
+
+  .donation-container,
+  .indie-pledge-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .donation-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
